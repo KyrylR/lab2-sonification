@@ -1,0 +1,25 @@
+{
+  "name": "lab2-sonification",
+  "version": "1.0.0",
+  "description": "Sonification (sound \"visualization\" of data). Generates a MIDI file based on certain data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/KyrylR/lab2-sonification.git"
+  },
+  "keywords": [
+    "typescript",
+    "music",
+    "midi",
+    "sonification"
+  ],
+  "author": "KyrylR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KyrylR/lab2-sonification/issues"
+  },
+  "homepage": "https://github.com/KyrylR/lab2-sonification#readme"
+}
