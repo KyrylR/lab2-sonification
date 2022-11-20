@@ -2,9 +2,13 @@
   "name": "lab2-sonification",
   "version": "1.0.0",
   "description": "Sonification (sound \"visualization\" of data). Generates a MIDI file based on certain data.",
-  "main": "index.js",
+  "main": "clip.ts",
   "scripts": {
-    "test": "test"
+    "compile": "tsc --build .",
+    "lint-fix": "prettier --write \"./**/*.ts\" && prettier --write \"./**/*.js\"",
+    "test": "echo \"No test specified\"",
+    "all": "npm run lint-fix && npm run compile",
+    "exec-all": "node examples/ex1.js && node examples/ex2.js && node examples/ex3.js && node examples/ex4.js && node examples/ex5.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +25,18 @@
   "bugs": {
     "url": "https://github.com/KyrylR/lab2-sonification/issues"
   },
-  "homepage": "https://github.com/KyrylR/lab2-sonification#readme"
+  "homepage": "https://github.com/KyrylR/lab2-sonification#readme",
+  "dependencies": {
+    "jsmidgen": "~0.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "chai": "^4.2.0",
+    "prettier": "^2.7.1",
+    "ts-node": "^8.1.0",
+    "typescript": "~4.5.2"
+  },
+  "engines": {
+    "node": ">6.x.x"
+  }
 }
